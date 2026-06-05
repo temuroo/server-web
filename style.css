@@ -1,0 +1,155 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background-color: #0b0b0f;
+  color: #ffffff;
+}
+
+header {
+  display: grid;
+  grid-template-columns: 1fr auto 1fr;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #111118;
+  border-bottom: 2px solid #2f6fff;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.logo-block {
+  justify-self: start;
+}
+
+.logo-block img {
+  display: block;
+  max-width: 250px;
+  height: auto;
+}
+
+header h1 {
+  font-size: 1.6rem;
+  color: #ffffff;
+  text-align: center;
+  margin: 0;
+}
+
+main {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 40px 20px;
+}
+
+.card {
+  width: 100%;
+  max-width: 520px;
+  background: #161620;
+  padding: 45px;
+  border: 1px solid #2b2b38;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.5);
+}
+
+.card h2 {
+  text-align: center;
+  margin-top: 0;
+  color: #ffffff;
+}
+
+#display {
+  width: 100%;
+  padding: 15px;
+  font-size: 22px;
+  font-family: inherit;
+  text-align: right;
+  color: #ffffff;
+  background-color: #0f0f16;
+  border: 1px solid #333344;
+  border-radius: 8px;
+}
+
+#display:focus {
+  outline: none;
+  border-color: #2f6fff;
+}
+
+.result-block {
+  margin: 20px 0;
+  padding: 15px;
+  background-color: #0f0f16;
+  border-left: 4px solid #2f6fff;
+  border-radius: 8px;
+}
+
+.result-block p {
+  margin: 0;
+  color: #d7d7e0;
+}
+
+.error {
+  color: #ff6b6b;
+  font-weight: 600;
+}
+
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+button {
+  padding: 15px;
+  font-size: 18px;
+  font-family: inherit;
+  color: #ffffff;
+  background-color: #2f6fff;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #1f55d8;
+}
+
+.equal {
+  grid-column: span 4;
+  font-size: 20px;
+  font-weight: 700;
+}
+
+.help {
+  margin-top: 25px;
+  padding: 15px;
+  background-color: #0f0f16;
+  border: 1px solid #2b2b38;
+  border-radius: 8px;
+  font-size: 14px;
+}
+
+.help p {
+  margin: 5px 0;
+  color: #d7d7e0;
+}
+
+footer {
+  background-color: #111118;
+  color: #9a9aaa;
+  padding: 25px;
+  text-align: center;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  border-top: 1px solid #2b2b38;
+}
+
+footer p {
+  margin: 0;
+}
